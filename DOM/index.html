@@ -13,15 +13,44 @@
     <main>
         <h1>Welcome Here</h1>
         <h3>Hi there, I am Yeasin Mridha</h3>
-        <h4>Skills :
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum placeat aliquid dicta <br>
+            saepe explicabo voluptatem praesentium exercitationem perferendis ea, minus reiciendis <br>
+            voluptatum qui sit commodi esse quos nisi deserunt beatae repudiandae voluptatibus ex! <br>
+            Asperiores doloribus, nulla sunt nam neque ut?</p>
+        <section>
+            <h4>Skills :
+                <ul>
+                    <li>Frontend</li>
+                    <li>Backend</li>
+                    <li>Ui/Ux</li>
+                    <li>Graphcis Design</li>
+                    <li>Video Editing</li>
+                </ul>
+            </h4>
+        </section>
+
+        <section>
+            <h4> Work Experience :
+                <ul>
+                    <li>Fiverr</li>
+                    <li>99design</li>
+                    <li>Megabyte7</li>
+                    <li>Upwork</li>
+                </ul>
+            </h4>
+        </section>
+
+        <section>
+            <h4 id="places-title">Places I like to visit
             <ul>
-                <li>Frontend</li>
-                <li>Backend</li>
-                <li>Ui/Ux</li>
-                <li>Graphcis Design</li>
-                <li>Video Editing</li>
+                <li>Sundarban</li>
+                <li>Bandarban</li>
+                <li>Kataban</li>
+                <li>Shalban</li>
+                <li>Coxsbazar</li>
             </ul>
         </h4>
+        </section>
     </main>
     <script src="js/dom.js"> //for another js file
 
@@ -29,6 +58,12 @@
 
     <script>
         console.log('I am from inside the html file');  //for inside js ....
+
+        const allHeadings = document.getElementsByTagName('h1');
+        for (const h1 of allHeadings){
+            console.log(h1);
+        }
+
     </script>
 </body>
 </html>
