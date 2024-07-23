@@ -1,0 +1,14 @@
+.text1{
+    font: bold;
+    color: blueviolet;
+    text-align: center;
+    text-shadow: slateblue
+}
+
+.nav1{
+    /* text-align: center; */
+    justify-content:flex-start;
+    /* text-decoration: none;  */
+      align-items:flex-start; 
+      flex-direction: row;
+}
