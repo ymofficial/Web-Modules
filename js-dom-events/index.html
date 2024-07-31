@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Events</title>
+</head>
+<body>
+    <h1>DOM Events</h1>
+    <button onclick="console.log('click me1');">click me1</button>
+    <button onclick="console.log('click me2');">click me2</button>
+    <br>
+    <button onclick="document.body.style.backgroundColor='Yellow'">Make Yellow</button>
+    <!-- type 1 -->
+     <button onclick="makeRed()">Make red</button>
+
+     <button onclick="makeGreen()">Make green</button>
+     <br>
+     <button onclick="darkMode()">Dark Mode</button>
+     <br>
+     <!-- Type 2 -->
+      <button id="make-Orange">Make Orange</button>
+
+    <!-- js connection always will be in the last part of body -->
+
+    <!-- This is for making a function for an events -->
+    <script>
+        function makeRed(){
+            document.body.style.backgroundColor = 'red';
+        }
+    </script>
+    <!-- Type 2 -->
+    <script>
+        document.getElementById('make-Orange').addEventListener('click', function(){
+            document.body.style.backgroundColor = 'orange';
+        })
+    </script>
+   
+   <script src="js/event.js"></script>
+</body>
+</html>
