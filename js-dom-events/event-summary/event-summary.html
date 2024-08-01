@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM Events Handlers</title>
+</head>
+<body>
+    <h1>Final DOM event handlers</h1>
+
+    <h3 id="handler-status">Default Text</h3>
+
+    <button onclick="handleOnClick()">Handle event by add on click function</button>
+
+
+    <br> <br> <br> <br><br><br>
+    
+
+    <h3 id="order-done">Wanna Confirm Your Order?</h3>
+    <button onclick="orderBtn()">Confirm</button>
+
+    <!-- Another type/ option 2 -->
+     <!-- Add event listener -->
+
+    
+    <button id="event-listener">Cancel Order</button>
+
+
+
+    <script>
+        function handleOnClick(){
+            console.log('button clicked!');
+            const handlerStatus = document.getElementById('handler-status');
+            handlerStatus.innerText = 'Your Account is Hacked by Megabyte7'  
+        }
+    </script>
+
+    <script>
+        function orderBtn(){
+            console.log('Order Button clicked');
+            const oderDone = document.getElementById('order-done');
+            oderDone.innerText = 'Your order is confirmed, Please check your email.'
+        }
+
+        // option 2 :
+        document.getElementById('event-listener').addEventListener('click' ,function(){
+            const oderDone = document.getElementById('order-done');
+            oderDone.innerText='Your Order is Cancel Successfully !'
+        });
+
+    </script>
+
+
+</body>
+</html>
