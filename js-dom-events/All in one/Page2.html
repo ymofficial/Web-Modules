@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+        <!-- Tailwind and DaisyUI CDN link -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <head>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                  <a class="btn btn-ghost text-2xl">YM Design</a>
+                </div>
+                <div class="flex-none">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>Dashboard</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                    <li>
+                      <details>
+                        <summary>More</summary>
+                        <ul class="bg-base-100 rounded-t-none p-2">
+                          <!-- <li><a>Dark Mode</a></li> -->              
+                          <li><a href=""><input type="checkbox" class="toggle" checked="checked" id="dark-mode" /></a></li>
+                          <li><a>Download CV</a></li>
+                          <li><a >DarkMode</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+    
+    
+        </nav>
+    </head>
+   
+    <main>
+        <!-- <h1 style="text-align: center; text-xl">DOM Practice</h1>
+        <h3>Dark Mode</h3> <br>
+        <!-- <button id="dark-mode">DarkMode</button> -->
+         <h3 style="text-align: center; font-size: 32px;">Chat Box</h3> <br> <br>
+
+         <!-- <textarea class="textarea textarea-primary" placeholder="Bio" cols="100" rows="50" style="align-items: center;">
+            
+         </textarea> -->
+
+         <div class="card bg-primary text-primary-content w-96">
+            <div class="card-body">
+              <!-- chat -->
+              <div class="chat chat-start">
+                <div class="chat-image avatar">
+                  <div class="w-10 rounded-full">
+                    <img
+                      alt="Tailwind CSS chat bubble component"
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                  </div>
+                </div>
+                <div class="chat-bubble">It was said that you would, destroy the Sith, not join them.</div>
+              </div>
+              <div class="chat chat-start">
+                <div class="chat-image avatar">
+                  <div class="w-10 rounded-full">
+                    <img
+                      alt="Tailwind CSS chat bubble component"
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                  </div>
+                </div>
+                <div class="chat-bubble">It was you who would bring balance to the Force</div>
+              </div>
+              <div class="chat chat-start">
+                <div class="chat-image avatar">
+                  <div class="w-10 rounded-full">
+                    <img
+                      alt="Tailwind CSS chat bubble component"
+                      src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" />
+                  </div>
+                </div>
+                <div class="chat-bubble">Not leave it in Darkness</div>
+              </div>
+              <div class="card-actions justify-end">
+                <button class="btn">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+    </main>
+
+    <footer>
+        <h3 style="text-align: end; font-size: smaller;">Copyrights by YM Design</h3>
+    </footer>
+
+  
+
+    <script>
+        document.getElementById('dark-mode').addEventListener('click',function(){
+            console.log('JS working');
+            document.body.style.backgroundColor='white'
+        })
+    </script>
+</body>
+</html>
