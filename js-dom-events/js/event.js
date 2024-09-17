@@ -9,3 +9,7 @@ function makeGreen(){
 function darkMode(){
     document.body.style.backgroundColor ='#0f172a';
 }
+
+function defaultMode(){
+    document.body.style.backgroundColor ='white';
+}
