@@ -7,13 +7,23 @@
 </head>
 <body>
     <h1>Explore more events</h1>
-    <button id="btn-more">Events</button> //button added
-    //Now its time to add javascript ....
+    <button id="btn-more">Events</button> <!-- Button added-->
+    <input id="text-field" type="text">
+    <!-- Now its time to add javascript .... -->
     <script>
-        document.getElementById('btn-more').addEventListener('click',function(){
+        document.getElementById('btn-more').addEventListener('mouseenter',function(){  
             console.log('Event Triggered!');
             
+        }) 
+                // Three events Listeners : Click, Mouseenter, Mousemove
+
+        document.getElementById('text-field').addEventListener('focus',function(){
+            console.log('Text Field Touched By The JavaScript!');
+            
         })
+
+    
+
 
     </script>
 </body>
