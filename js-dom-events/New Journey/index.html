@@ -8,20 +8,26 @@
 <body>
     <h1>Explore More Events</h1>
     <button id="btn-more">Events</button>
-    <input id="input-field" type="text">
+    <!-- <input id="input-field" type="text"> -->
+    <input id="text-field" type="text">
 
     <script>
         document.getElementById('btn-more').addEventListener('mousemove',function()
     {console.log('event triggered');}
     );
 
-        document.getElementById('input-field').addEventListener('mouseenter',function()
-        {console.log('Input Done');
-        })
+        // document.getElementById('input-field').addEventListener('mouseenter',function()
+        // {console.log('Input Done');
+        // })
 
-        document.getElementById('input-field').addEventListener('blur',function()
-        {console.log('Focus Blur');
+        // document.getElementById('input-field').addEventListener('blur',function()
+        // {console.log('Event Triggered inside the input field blur'); //If I click outside from the input field then the input field will be blur!
+        // })
+
+        document.getElementById('text-field').addEventListener('keydown',function()
+        {console.log(event.target.value); //If I click outside from the input field then the input field will be blur!
         })
+        /// 
 
     </script>
 </body>
